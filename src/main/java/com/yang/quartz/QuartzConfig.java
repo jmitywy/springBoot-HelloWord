@@ -1,23 +1,23 @@
-//package com.yang.quartz;
-//
-//import com.yang.quartz.task.TestTask1;
-//import com.yang.quartz.task.TestTask2;
-//import org.quartz.*;
-//import org.springframework.context.annotation.Bean;
-//import org.springframework.context.annotation.Configuration;
-//
-///**
-// * @author yydsj
-// * @date 2022/3/5 -11:04
-// */
-////@Configuration
-//public class QuartzConfig {
+package com.yang.quartz;
+
+import com.yang.quartz.task.TestTask1;
+import com.yang.quartz.task.TestTask2;
+import org.quartz.*;
+import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.Configuration;
+
+/**
+ * @author yydsj
+ * @date 2022/3/5 -11:04
+ */
+@Configuration
+public class QuartzConfig {
 //    @Bean
 //    public JobDetail testQuartz1() {
 //        return JobBuilder.newJob(TestTask1.class).withIdentity("testTask1").storeDurably().build();
 //    }
 //
-////    @Bean
+//    @Bean
 //    public Trigger testQuartzTrigger1() {
 //        //5秒执行一次
 //        SimpleScheduleBuilder scheduleBuilder = SimpleScheduleBuilder.simpleSchedule()
@@ -42,4 +42,4 @@
 //                .withSchedule(CronScheduleBuilder.cronSchedule("*/5 * * * * ?"))
 //                .build();
 //    }
-//}
+}
